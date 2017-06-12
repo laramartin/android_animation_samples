@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UI Animation Samples</string>
+    <string name="slide_up_transition">Slide up transition</string>
+    <string name="view_a">A</string>
 </resources>
