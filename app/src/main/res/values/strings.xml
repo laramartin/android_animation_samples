@@ -2,4 +2,7 @@
     <string name="app_name">UI Animation Samples</string>
     <string name="slide_up_transition">Slide up transition</string>
     <string name="view_a">A</string>
+    <string name="view_b">B</string>
+    <string name="lorem_ipsum_title">Lorem Ipsum</string>
+    <string name="lorem_ipsum_text">Normcore non photo booth cred street art venmo before they sold out echo park ramps meditation hot chicken consectetur. Try-hard polaroid enim, ipsum succulents waistcoat tumblr pork belly. Hexagon asymmetrical synth, post-ironic ullamco poutine aesthetic aliqua before they sold out duis waistcoat adipisicing snackwave chia.</string>
 </resources>
