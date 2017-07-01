@@ -11,4 +11,6 @@
     <string name="slide_right">Slide Right</string>
     <string name="fade_in">Fade In</string>
     <string name="fade_out">Fade Out</string>
+    <string name="explode">Explode</string>
+    <string name="fade_in_out">Fade In Out</string>
 </resources>

@@ -10,7 +10,9 @@ import android.view.View;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static eu.laramartin.uianimationsamples.AnimationType.EXPLODE;
 import static eu.laramartin.uianimationsamples.AnimationType.FADE_IN;
+import static eu.laramartin.uianimationsamples.AnimationType.FADE_IN_OUT;
 import static eu.laramartin.uianimationsamples.AnimationType.FADE_OUT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_DOWN;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_LEFT;
@@ -28,7 +30,9 @@ public class MainActivity extends AppCompatActivity implements ClickAdapter {
             SLIDE_LEFT,
             SLIDE_RIGHT,
             FADE_IN,
-            FADE_OUT
+            FADE_OUT,
+            FADE_IN_OUT,
+            EXPLODE
     };
 
     @Override

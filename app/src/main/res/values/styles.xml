@@ -38,6 +38,16 @@
         <item name="android:windowTransitionBackgroundFadeDuration">900</item>
     </style>
 
+    <style name="AppTheme.FadeInOut" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/fade_in_out</item>
+        <item name="android:windowTransitionBackgroundFadeDuration">900</item>
+    </style>
+
+    <style name="AppTheme.Explode" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowTransitionBackgroundFadeDuration">900</item>
+    </style>
+
     <!--<style name="ActivityAnimations" parent="android:style/Animation.Activity">-->
         <!--<item name="android:activityOpenEnterAnimation">@anim/slide_in_up</item>-->
         <!--<item name="android:activityOpenExitAnimation">@anim/hold</item>-->

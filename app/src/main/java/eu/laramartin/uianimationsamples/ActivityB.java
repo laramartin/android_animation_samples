@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import static eu.laramartin.uianimationsamples.AnimationType.EXPLODE;
 import static eu.laramartin.uianimationsamples.AnimationType.FADE_IN;
+import static eu.laramartin.uianimationsamples.AnimationType.FADE_IN_OUT;
 import static eu.laramartin.uianimationsamples.AnimationType.FADE_OUT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_DOWN;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_LEFT;
@@ -40,6 +42,12 @@ public class ActivityB extends AppCompatActivity {
                 break;
             case FADE_OUT:
                 setTheme(R.style.AppTheme_FadeOut);
+                break;
+            case FADE_IN_OUT:
+                setTheme(R.style.AppTheme_FadeInOut);
+                break;
+            case EXPLODE:
+                setTheme(R.style.AppTheme_Explode);
                 break;
             default:
                 break;
