@@ -7,24 +7,24 @@ import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
 
-public class FirstActivityAdapter extends RecyclerView.Adapter<FirstActivityAdapter.FirstActivityAdapterViewHolder> {
+public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridAdapterViewHolder> {
 
     private final ClickAdapter clickAdapter;
 
-    public FirstActivityAdapter(ClickAdapter clickAdapter) {
+    public GridAdapter(ClickAdapter clickAdapter) {
         this.clickAdapter = clickAdapter;
     }
 
     @Override
-    public FirstActivityAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public GridAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.grid_item, parent, false);
-        FirstActivityAdapterViewHolder viewHolder = new FirstActivityAdapterViewHolder(view);
+        GridAdapterViewHolder viewHolder = new GridAdapterViewHolder(view);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(FirstActivityAdapterViewHolder holder, int position) {
+    public void onBindViewHolder(GridAdapterViewHolder holder, int position) {
 
     }
 
@@ -33,9 +33,9 @@ public class FirstActivityAdapter extends RecyclerView.Adapter<FirstActivityAdap
         return 14;
     }
 
-    public class FirstActivityAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class GridAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        public FirstActivityAdapterViewHolder(View itemView) {
+        public GridAdapterViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
             itemView.setOnClickListener(this);

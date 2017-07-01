@@ -16,10 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".slide.SlideUpFirstActivity" />
         <activity
-            android:name=".slide.SlideUpSecondActivity"
-            android:theme="@style/AppTheme.SlideUp" />
+            android:name=".ActivityB" />
     </application>
 
 </manifest>
