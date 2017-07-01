@@ -11,12 +11,18 @@ import android.view.View;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_DOWN;
+import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_LEFT;
+import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_RIGHT;
+import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_UP;
+
 public class MainActivity extends AppCompatActivity implements ClickAdapter {
 
     @BindView(R.id.grid)
     RecyclerView recyclerView;
 
     private GridAdapter adapter;
+    private int[] animationsList = {SLIDE_UP, SLIDE_DOWN, SLIDE_LEFT, SLIDE_RIGHT};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,18 +32,18 @@ public class MainActivity extends AppCompatActivity implements ClickAdapter {
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
-        adapter = new GridAdapter(this);
+        adapter = new GridAdapter(animationsList, this);
         recyclerView.setAdapter(adapter);
     }
 
     @Override
-    public void onClickAdapterItem(View view) {
+    public void onClickAdapterItem(View view, int animationType) {
         ActivityOptions activityOptions = ActivityOptions
                 .makeSceneTransitionAnimation(this
 //                        , view, "slide"
                 );
         Intent intent = new Intent(this, ActivityB.class);
-        intent.putExtra("transitionType", "slideUp");
+        intent.putExtra("transitionType", animationType);
         startActivity(intent, activityOptions.toBundle());
     }
 }
