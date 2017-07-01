@@ -57,16 +57,16 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridAdapterVie
         public void bind(int animationType) {
             switch (animationType) {
                 case SLIDE_UP:
-                    ((TextView) itemView).setText("slide up!!");
+                    ((TextView) itemView).setText(R.string.slide_up);
                     break;
                 case SLIDE_DOWN:
-                    ((TextView) itemView).setText("slide down!!");
+                    ((TextView) itemView).setText(R.string.slide_down);
                     break;
                 case SLIDE_LEFT:
-                    ((TextView) itemView).setText("slide left!!");
+                    ((TextView) itemView).setText(R.string.slide_left);
                     break;
                 case SLIDE_RIGHT:
-                    ((TextView) itemView).setText("slide right!!");
+                    ((TextView) itemView).setText(R.string.slide_right);
                     break;
             }
         }

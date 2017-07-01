@@ -11,15 +11,25 @@
     <style name="AppTheme.SlideUp" parent="AppTheme">
         <item name="android:windowEnterTransition">@transition/slide_up</item>
         <item name="android:windowTransitionBackgroundFadeDuration">900</item>
-        <!-- default animation for sliding in activities -->
-        <!-- does not require special parameters on the startActivity method -->
-        <!--<item name="android:windowAnimationStyle">@style/ActivityAnimations</item>-->
     </style>
 
-    <style name="ActivityAnimations" parent="android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@anim/slide_in_up</item>
-        <item name="android:activityOpenExitAnimation">@anim/hold</item>
-        <item name="android:activityCloseEnterAnimation">@anim/hold</item>
-        <item name="android:activityCloseExitAnimation">@anim/slide_out_down</item>
+    <style name="AppTheme.SlideDown" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/slide_down</item>
+        <item name="android:windowTransitionBackgroundFadeDuration">900</item>
     </style>
+    <style name="AppTheme.SlideRight" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/slide_right</item>
+        <item name="android:windowTransitionBackgroundFadeDuration">900</item>
+    </style>
+    <style name="AppTheme.SlideLeft" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/slide_left</item>
+        <item name="android:windowTransitionBackgroundFadeDuration">900</item>
+    </style>
+
+    <!--<style name="ActivityAnimations" parent="android:style/Animation.Activity">-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/slide_in_up</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/hold</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/hold</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/slide_out_down</item>-->
+    <!--</style>-->
 </resources>

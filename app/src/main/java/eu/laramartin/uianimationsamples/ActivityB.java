@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_DOWN;
+import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_LEFT;
+import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_RIGHT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_UP;
 
 public class ActivityB extends AppCompatActivity {
@@ -20,6 +23,15 @@ public class ActivityB extends AppCompatActivity {
         switch (transitionType) {
             case SLIDE_UP:
                 setTheme(R.style.AppTheme_SlideUp);
+                break;
+            case SLIDE_DOWN:
+                setTheme(R.style.AppTheme_SlideDown);
+                break;
+            case SLIDE_LEFT:
+                setTheme(R.style.AppTheme_SlideLeft);
+                break;
+            case SLIDE_RIGHT:
+                setTheme(R.style.AppTheme_SlideRight);
                 break;
             default:
                 break;

@@ -38,9 +38,7 @@ public class MainActivity extends AppCompatActivity implements ClickAdapter {
     @Override
     public void onClickAdapterItem(View view, int animationType) {
         ActivityOptions activityOptions = ActivityOptions
-                .makeSceneTransitionAnimation(this
-//                        , view, "slide"
-                );
+                .makeSceneTransitionAnimation(this);
         startActivity(ActivityB.createIntent(this, animationType), activityOptions.toBundle());
     }
 }
