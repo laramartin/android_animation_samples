@@ -9,4 +9,6 @@
     <string name="slide_down">Slide Down</string>
     <string name="slide_left">Slide Left</string>
     <string name="slide_right">Slide Right</string>
+    <string name="fade_in">Fade In</string>
+    <string name="fade_out">Fade Out</string>
 </resources>

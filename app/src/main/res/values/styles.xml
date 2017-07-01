@@ -17,12 +17,24 @@
         <item name="android:windowEnterTransition">@transition/slide_down</item>
         <item name="android:windowTransitionBackgroundFadeDuration">900</item>
     </style>
+
     <style name="AppTheme.SlideRight" parent="AppTheme">
         <item name="android:windowEnterTransition">@transition/slide_right</item>
         <item name="android:windowTransitionBackgroundFadeDuration">900</item>
     </style>
+
     <style name="AppTheme.SlideLeft" parent="AppTheme">
         <item name="android:windowEnterTransition">@transition/slide_left</item>
+        <item name="android:windowTransitionBackgroundFadeDuration">900</item>
+    </style>
+
+    <style name="AppTheme.FadeIn" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/fade_in</item>
+        <item name="android:windowTransitionBackgroundFadeDuration">900</item>
+    </style>
+
+    <style name="AppTheme.FadeOut" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/fade_out</item>
         <item name="android:windowTransitionBackgroundFadeDuration">900</item>
     </style>
 

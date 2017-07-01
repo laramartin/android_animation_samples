@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import static eu.laramartin.uianimationsamples.AnimationType.FADE_IN;
+import static eu.laramartin.uianimationsamples.AnimationType.FADE_OUT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_DOWN;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_LEFT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_RIGHT;
@@ -32,6 +34,12 @@ public class ActivityB extends AppCompatActivity {
                 break;
             case SLIDE_RIGHT:
                 setTheme(R.style.AppTheme_SlideRight);
+                break;
+            case FADE_IN:
+                setTheme(R.style.AppTheme_FadeIn);
+                break;
+            case FADE_OUT:
+                setTheme(R.style.AppTheme_FadeOut);
                 break;
             default:
                 break;

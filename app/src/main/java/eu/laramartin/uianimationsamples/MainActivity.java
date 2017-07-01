@@ -10,6 +10,8 @@ import android.view.View;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static eu.laramartin.uianimationsamples.AnimationType.FADE_IN;
+import static eu.laramartin.uianimationsamples.AnimationType.FADE_OUT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_DOWN;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_LEFT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_RIGHT;
@@ -21,7 +23,13 @@ public class MainActivity extends AppCompatActivity implements ClickAdapter {
     RecyclerView recyclerView;
 
     private GridAdapter adapter;
-    private int[] animationsList = {SLIDE_UP, SLIDE_DOWN, SLIDE_LEFT, SLIDE_RIGHT};
+    private int[] animationsList = {SLIDE_UP,
+            SLIDE_DOWN,
+            SLIDE_LEFT,
+            SLIDE_RIGHT,
+            FADE_IN,
+            FADE_OUT
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

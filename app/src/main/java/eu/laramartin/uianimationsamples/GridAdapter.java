@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import butterknife.ButterKnife;
 
+import static eu.laramartin.uianimationsamples.AnimationType.FADE_IN;
+import static eu.laramartin.uianimationsamples.AnimationType.FADE_OUT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_DOWN;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_LEFT;
 import static eu.laramartin.uianimationsamples.AnimationType.SLIDE_RIGHT;
@@ -67,6 +69,12 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridAdapterVie
                     break;
                 case SLIDE_RIGHT:
                     ((TextView) itemView).setText(R.string.slide_right);
+                    break;
+                case FADE_IN:
+                    ((TextView) itemView).setText(R.string.fade_in);
+                    break;
+                case FADE_OUT:
+                    ((TextView) itemView).setText(R.string.fade_out);
                     break;
             }
         }
