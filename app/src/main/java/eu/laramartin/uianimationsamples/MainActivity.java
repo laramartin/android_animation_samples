@@ -1,7 +1,6 @@
 package eu.laramartin.uianimationsamples;
 
 import android.app.ActivityOptions;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -42,8 +41,6 @@ public class MainActivity extends AppCompatActivity implements ClickAdapter {
                 .makeSceneTransitionAnimation(this
 //                        , view, "slide"
                 );
-        Intent intent = new Intent(this, ActivityB.class);
-        intent.putExtra("transitionType", animationType);
-        startActivity(intent, activityOptions.toBundle());
+        startActivity(ActivityB.createIntent(this, animationType), activityOptions.toBundle());
     }
 }
